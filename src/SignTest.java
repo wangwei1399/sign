@@ -78,6 +78,7 @@ public class SignTest {
             md5 = MessageDigest.getInstance("md5");
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
+
         }
         byte[] cipherData = md5.digest(plainText.getBytes());
         StringBuilder builder = new StringBuilder();
